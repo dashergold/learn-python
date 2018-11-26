@@ -61,12 +61,11 @@ def score_user_reply(a,b,operation,answer):
 
 total_score = 0
 rounds = ask_user_rounds()
-while rounds > 0:
+for i in range(rounds):
     n1 = generate_random_number()
     n2 = generate_random_number()
     op = generate_random_operation()
     a = ask_user_question(n1,n2,op)
     s = score_user_reply(n1,n2,op,a)
     total_score += s
-    rounds -= 1
 print("you got " + str(total_score)+" points!")
