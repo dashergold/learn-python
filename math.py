@@ -62,6 +62,7 @@ def score_user_reply(a,b,operation,answer):
 total_score = 0
 rounds = ask_user_rounds()
 for i in range(rounds):
+    print("round "+str(i + 1))
     n1 = generate_random_number()
     n2 = generate_random_number()
     op = generate_random_operation()
